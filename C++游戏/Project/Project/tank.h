@@ -87,53 +87,6 @@ bool tank::TurnDirection(direction Direction)
 		{
 			y+=Direction.q;
 			x+=Direction.p;
-			if(Response())
-			{
-				y+=Direction.q;
-				x+=Direction.p;
-				if(Response())
-				{
-					y+=Direction.q;
-					x+=Direction.p;
-					if(Response())
-					{
-						y+=Direction.q;
-						x+=Direction.p;
-						if(Response())
-						{
-							//Run();
-							return 1;
-						}
-						else    //5
-						{
-							y-=Direction.q;
-							x-=Direction.p;
-						}
-						//Run();
-						return 1;
-					}
-					else   //4
-					{
-						y-=Direction.q;
-						x-=Direction.p;
-					}
-					//Run();
-					return 1;
-				}
-				else    //3
-				{
-					y-=Direction.q;
-					x-=Direction.p;
-				}
-				//Run();
-				return 1;
-			}
-			else    //2
-			{
-				y-=Direction.q;
-				x-=Direction.p;
-			}
-			//Run();
 			return 1;
 		}
 		else    //1
