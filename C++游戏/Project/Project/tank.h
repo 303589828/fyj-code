@@ -36,7 +36,7 @@ public:
 	bool TurnDirection(direction Direction);
 	bool Run();
 	bool Stop();
-	void check(char key);
+	void check(int key);
 	void show();
 	bool Response();
 	void Init();
@@ -131,7 +131,7 @@ bool tank::Response()
 	return 1;
 }
 
-void tank::check(char key)
+void tank::check(int key)
 {
 	switch(key)
 	{
