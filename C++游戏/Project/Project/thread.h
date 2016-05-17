@@ -9,8 +9,10 @@ void Check()
 {
 	while(GetOver)
 	{
-			mytank.check();
-			mtx.unlock();
+		int key=getch();
+		mtx.lock();
+		mytank.check(key);
+		mtx.unlock();
 	}
 
 }
